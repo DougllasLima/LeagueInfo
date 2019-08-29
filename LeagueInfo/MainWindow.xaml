@@ -1,0 +1,115 @@
+﻿<Window x:Class="LeagueInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeagueInfo"
+        mc:Ignorable="d"
+        Title="League Info 1.0" Height="514.5" Width="819.834">
+    <Grid Height="489" VerticalAlignment="Top">
+        <Button Content="Search" HorizontalAlignment="Left" Margin="237,24,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click" Height="22"/>
+        <TextBox Name="SummonerName" HorizontalAlignment="Left" Height="22" MaxLines="1" Margin="23,24,0,0" TextWrapping="Wrap" Text="Chuva dee MEC" VerticalAlignment="Top" Width="154"/>
+        <ComboBox Name="cbRegion" HorizontalAlignment="Left" Margin="182,24,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.5,0.5"></ComboBox>
+        <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Height="133" Margin="150,63,420,293"/>
+        <Image Name="TierIcon" HorizontalAlignment="Left" Height="87" Margin="162,101,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label Name="lblTier" HorizontalAlignment="Left" Margin="259,98,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="5.7,5.4"/>
+        <Label Name="lblStatus" HorizontalAlignment="Left" Margin="259,125,0,0" VerticalAlignment="Top" Height="28" RenderTransformOrigin="-4.556,-1.5"/>
+        <Label Name="lblPercentWin"  HorizontalAlignment="Left" Margin="260,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.8,0.6"/>
+        <Image Name="imgBorder" HorizontalAlignment="Left" Height="130" Margin="23,66,0,0" VerticalAlignment="Top" Width="127"/>
+        <Image Name="ProfileIcon" HorizontalAlignment="Left" Height="111" Margin="34,78,0,0" VerticalAlignment="Top" Width="104"/>
+        <Label Name="lblName" HorizontalAlignment="Left" Margin="162,66,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <GroupBox BorderBrush="SlateGray" Header="Ultimas partidas jogadas:" HorizontalAlignment="Left" Height="425" Margin="390,54,0,0" VerticalAlignment="Top" Width="408"/>
+        <Grid Margin="392,66,14,10">
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="8,10,3,345">
+                <Image x:Name="ChampHistIcon1" Margin="0,0,333,0"/>
+            </Border>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="8,77,3,278">
+            </Border>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="8,145,3,210"/>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="8,212,3,143"/>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="8,279,3,76"/>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="8,346,3,9"/>
+        </Grid>
+
+            <Grid Margin="10,218,427,225">
+            <Ellipse Margin="3,1.5,325,0" Height="40" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="ChampIcon1" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="0,0,-7,3"/>
+            <Ellipse Margin="125,4,210,7">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="MasteryIcon1" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Label Name="lblNameChamp1" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="55,8,0,0" VerticalAlignment="Top"/>
+            <Label Name="lblMastery1" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="162,8,0,0" VerticalAlignment="Top"/>
+            <Label Name="lblMasteryPoints1" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="282,8,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Margin="10,269,427,174">
+            <Ellipse Margin="3,1.5,325,0" Height="40" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="ChampIcon2" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="0,0,-7,3"/>
+            <Ellipse Margin="125,4,210,7">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="MasteryIcon2" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Label Name="lblNameChamp2" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="51,10,0,0" VerticalAlignment="Top"/>
+            <Label Name="lblMastery2" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="162,8,0,0" VerticalAlignment="Top"/>
+            <Label Name="lblMasteryPoints2" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="282,8,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Margin="10,320,427,123">
+            <Ellipse Margin="3,1.5,325,0" Height="40" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="ChampIcon3" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="0,0,-7,3"/>
+            <Ellipse Margin="125,4,210,7">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="MasteryIcon3" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Label Name="lblNameChamp3" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,-0.417"/>
+            <Label Name="lblMastery3" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="162,8,0,0" VerticalAlignment="Top"/>
+            <Label Name="lblMasteryPoints3" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="282,8,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Margin="10,371,427,72">
+            <Ellipse Margin="3,1.5,325,0" Height="40" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="ChampIcon4" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="0,0,-7,3"/>
+            <Ellipse Margin="125,4,210,7">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="MasteryIcon4" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Label Name="lblNameChamp4" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top"/>
+            <Label Name="lblMastery4" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="162,8,0,0" VerticalAlignment="Top"/>
+            <Label Name="lblMasteryPoints4" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="282,8,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Margin="10,422,427,21">
+            <Ellipse Margin="3,1.5,325,0" Height="40" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="ChampIcon5" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Border BorderThickness="1" CornerRadius="6" Padding="5" BorderBrush="SlateGray" Margin="0,0,-7,3"/>
+            <Ellipse Margin="125,4,210,7">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="MasteryIcon5" Stretch="Fill"></ImageBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Label Name="lblNameChamp5" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top"/>
+            <Label Name="lblMastery5" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="162,8,0,0" VerticalAlignment="Top"/>
+            <Label Name="lblMasteryPoints5" FontWeight="DemiBold" FontSize="14" HorizontalAlignment="Left" Margin="282,8,0,0" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Window>
